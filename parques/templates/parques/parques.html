@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Parques{% endblock %}
+{% block content %}
+  <h2>Catálogo de parques</h2>
+  <div class="grid">
+    {% for parque in parques %}
+      <div class="card">
+        <h3>{{ parque.nombre }}</h3>
+        <p>{{ parque.region }}</p>
+        <p>{{ parque.descripcion|truncatewords:15 }}</p>
+        <a href="{% url 'parques:detalle_parque' parque.id %}">Ver detalle</a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

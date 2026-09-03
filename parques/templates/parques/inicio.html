@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+  <h2>Parques destacados</h2>
+  <div class="grid">
+    {% for parque in destacados %}
+      <div class="card">
+        <h3>{{ parque.nombre }}</h3>
+        <p>{{ parque.region }}</p>
+        <a href="{% url 'parques:detalle_parque' parque.id %}">Ver más</a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

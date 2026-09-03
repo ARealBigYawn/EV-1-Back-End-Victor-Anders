@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Actividades{% endblock %}
+{% block content %}
+  <h2>Actividades por parque</h2>
+  {% for parque in parques %}
+    <div class="card">
+      <h3>{{ parque.nombre }}</h3>
+      <ul>
+        {% for actividad in parque.actividades %}
+          <li>{{ actividad }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+{% endblock %}

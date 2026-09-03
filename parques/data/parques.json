@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Torres del Paine",
+    "region": "Magallanes",
+    "descripcion": "Uno de los parques más icónicos de Chile, famoso por sus torres de granito, glaciares y fauna como el puma y el guanaco.",
+    "actividades": ["Trekking", "Observación de fauna", "Fotografía de paisaje"],
+    "imagen": "torres_del_paine.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Conguillío",
+    "region": "La Araucanía",
+    "descripcion": "Bosques de araucarias milenarias alrededor del volcán Llaima, con lagos y senderos de bosque nativo.",
+    "actividades": ["Trekking", "Camping", "Senderismo familiar"],
+    "imagen": "conguillio.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Lauca",
+    "region": "Arica y Parinacota",
+    "descripcion": "Parque altiplánico con volcanes, lagunas de altura y una rica fauna andina como vicuñas y flamencos.",
+    "actividades": ["Turismo de naturaleza", "Observación de aves", "Fotografía"],
+    "imagen": "lauca.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Chiloé",
+    "region": "Los Lagos",
+    "descripcion": "Bosque siempreverde, dunas costeras y humedales en la isla grande de Chiloé.",
+    "actividades": ["Senderismo", "Avistamiento de aves", "Turismo cultural"],
+    "imagen": "chiloe.jpg"
+  }
+]

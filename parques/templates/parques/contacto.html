@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Contacto{% endblock %}
+{% block content %}
+  <h2>Contacto</h2>
+  {% if enviado %}
+    <p class="mensaje-ok">¡Gracias! Tu mensaje fue enviado.</p>
+  {% endif %}
+  <form method="post">
+    {% csrf_token %}
+    <label>Nombre: <input type="text" name="nombre" required></label>
+    <label>Correo: <input type="email" name="correo" required></label>
+    <label>Mensaje: <textarea name="mensaje" required></textarea></label>
+    <button type="submit">Enviar</button>
+  </form>
+{% endblock %}
